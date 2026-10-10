@@ -1,0 +1,223 @@
+<?php
+
+return [
+    [
+        'id' => 1,
+        'product_id' => 1,
+        'email' => 'sofia.garcia@example.com',
+        'comment' => 'La cobertura es muy buena y deja un acabado natural.',
+        'rating' => 5,
+        'date' => '2026-09-01',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 2,
+        'product_id' => 1,
+        'email' => 'martin.lopez@example.com',
+        'comment' => 'Me gustó la textura, aunque esperaba un poco más de cobertura.',
+        'rating' => 4,
+        'date' => '2026-09-03',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 3,
+        'product_id' => 2,
+        'email' => 'carolina.perez@example.com',
+        'comment' => 'Da bastante volumen y se aplica fácilmente.',
+        'rating' => 5,
+        'date' => '2026-09-05',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 4,
+        'product_id' => 3,
+        'email' => 'lucas.fernandez@example.com',
+        'comment' => 'Tiene una textura agradable y no reseca los labios.',
+        'rating' => 5,
+        'date' => '2026-09-06',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 5,
+        'product_id' => 4,
+        'email' => 'valentina.rojas@example.com',
+        'comment' => 'El color queda muy natural.',
+        'rating' => 4,
+        'date' => '2026-09-08',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 6,
+        'product_id' => 6,
+        'email' => 'juan.martinez@example.com',
+        'comment' => 'La fragancia es suave y dura varias horas.',
+        'rating' => 5,
+        'date' => '2026-09-10',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 7,
+        'product_id' => 8,
+        'email' => 'camila.sanchez@example.com',
+        'comment' => 'Tiene un aroma intenso y elegante.',
+        'rating' => 5,
+        'date' => '2026-09-11',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 8,
+        'product_id' => 11,
+        'email' => 'agustin.diaz@example.com',
+        'comment' => 'La crema tiene una textura liviana y se absorbe rápido.',
+        'rating' => 5,
+        'date' => '2026-09-13',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 9,
+        'product_id' => 12,
+        'email' => 'florencia.torres@example.com',
+        'comment' => 'Deja la piel limpia y con una sensación agradable.',
+        'rating' => 4,
+        'date' => '2026-09-14',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 10,
+        'product_id' => 13,
+        'email' => 'diego.ramirez@example.com',
+        'comment' => 'Muy práctico para la limpieza diaria.',
+        'rating' => 5,
+        'date' => '2026-09-15',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 11,
+        'product_id' => 16,
+        'email' => 'natalia.acosta@example.com',
+        'comment' => 'Buen producto para el uso diario.',
+        'rating' => 5,
+        'date' => '2026-09-17',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 12,
+        'product_id' => 18,
+        'email' => 'facundo.castro@example.com',
+        'comment' => 'Tiene un sabor agradable y deja una sensación fresca.',
+        'rating' => 4,
+        'date' => '2026-09-18',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 13,
+        'product_id' => 21,
+        'email' => 'micaela.silva@example.com',
+        'comment' => 'La fragancia es fresca y agradable.',
+        'rating' => 4,
+        'date' => '2026-09-20',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 14,
+        'product_id' => 22,
+        'email' => 'tomas.molina@example.com',
+        'comment' => 'Deja una sensación de limpieza y tiene buen aroma.',
+        'rating' => 5,
+        'date' => '2026-09-21',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 15,
+        'product_id' => 26,
+        'email' => 'julieta.romero@example.com',
+        'comment' => 'Deja el cabello suave y con buen aroma.',
+        'rating' => 5,
+        'date' => '2026-09-23',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 16,
+        'product_id' => 29,
+        'email' => 'bruno.vargas@example.com',
+        'comment' => 'Muy buena opción para complementar el cuidado del cabello.',
+        'rating' => 5,
+        'date' => '2026-09-24',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 17,
+        'product_id' => 31,
+        'email' => 'paula.navarro@example.com',
+        'comment' => 'Es fácil de utilizar y la pantalla se lee claramente.',
+        'rating' => 5,
+        'date' => '2026-09-26',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 18,
+        'product_id' => 33,
+        'email' => 'sebastian.ortiz@example.com',
+        'comment' => 'El paquete es práctico para tener en el botiquín.',
+        'rating' => 4,
+        'date' => '2026-09-27',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 19,
+        'product_id' => 37,
+        'email' => 'rocio.benitez@example.com',
+        'comment' => 'Buen sabor y práctico para llevar durante el entrenamiento.',
+        'rating' => 5,
+        'date' => '2026-09-29',
+        'approved' => true,
+        'active' => true,
+    ],
+
+    [
+        'id' => 20,
+        'product_id' => 38,
+        'email' => 'maximiliano.farias@example.com',
+        'comment' => 'Buena opción para complementar la alimentación.',
+        'rating' => 4,
+        'date' => '2026-09-30',
+        'approved' => false,
+        'active' => true,
+    ],
+];
