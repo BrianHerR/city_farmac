@@ -59,8 +59,24 @@ declare(strict_types=1);
 
                             </div>
 
+                            <!-- Mostrar errores de validación -->
+                            <?php if (!empty($errors)): ?>
+                                <div class="alert alert-danger" role="alert">
+                                    <?php foreach ($errors as $error): ?>
+                                        <p class="mb-0">
+                                            <?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?>
+                                        </p>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+
                             <!-- Formulario de acceso -->
-                            <form action="#" method="post">
+                            <form action="/login.php" method="post">
+
+                                <input
+                                    type="hidden"
+                                    name="csrf_token"
+                                    value="<?= htmlspecialchars($_SESSION['login_csrf'], ENT_QUOTES, 'UTF-8') ?>">
 
                                 <div class="mb-3">
 
@@ -152,7 +168,7 @@ declare(strict_types=1);
                                     ¿Todavía no tenés una cuenta?
                                 </p>
 
-                                <a href="#registro"
+                                <a href="/register.php"
                                     class="fw-semibold text-success text-decoration-none">
                                     Crear una cuenta
                                 </a>

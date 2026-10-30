@@ -1,0 +1,239 @@
+
+/* ===== Base ===== */
+:root {
+     --admin-green: #198754;
+    --admin-green-dark: #146c43;
+
+    /* Sidebar */
+    --admin-sidebar: #101814;
+    --admin-sidebar-hover: #263a30;
+
+    /* Fondo principal y textos */
+    --admin-background: #f4f7f5;
+    --admin-text: #24352f;
+    --admin-muted: #b8c9c0;
+
+    /* Bordes */
+    --admin-border: #e1e8e3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.admin-body {
+    margin: 0;
+    background-color: var(--admin-background);
+    color: var(--admin-text);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.admin-wrapper {
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.admin-topbar {
+    min-height: 72px;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #ffffff;
+}
+
+.admin-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--admin-text);
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.admin-brand:hover {
+    color: var(--admin-green);
+}
+
+.admin-brand-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #e5f4ec;
+    color: var(--admin-green);
+    font-size: 1.35rem;
+}
+
+.admin-avatar {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #e5f4ec;
+    color: var(--admin-green-dark);
+    font-size: 1.3rem;
+}
+
+/* ===== Main layout ===== */
+.admin-main {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 72px);
+    background-color: var(--admin-background);
+}
+
+/* ===== Sidebar ===== */
+.admin-sidebar {
+    --bs-offcanvas-width: 270px;
+
+    width: 270px;
+    flex: 0 0 270px;
+
+    background-color: var(--admin-sidebar) !important;
+    color: #ffffff;
+}
+
+.admin-sidebar .offcanvas-body {
+    min-height: calc(100vh - 72px);
+    background-color: var(--admin-sidebar);
+}
+
+/* Título del menú */
+.sidebar-caption {
+    padding: 8px 12px 20px;
+    color: var(--admin-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+
+/* Títulos de las secciones */
+.sidebar-section-title {
+    margin: 22px 12px 10px;
+    color: var(--admin-muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* Navegación */
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-sidebar .admin-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 13px;
+
+    border-radius: 9px;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-size: 0.92rem;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.admin-sidebar .admin-nav-link i {
+    width: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Hover */
+.admin-sidebar .admin-nav-link:hover {
+    background-color: var(--admin-sidebar-hover);
+    color: #ffffff;
+}
+
+/* Página activa */
+.admin-sidebar .admin-nav-link.active {
+    background-color: var(--admin-green);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Separación del pie del menú */
+.sidebar-bottom {
+    border-top: 1px solid rgb(255 255 255 / 12%);
+}
+
+/* Contenido principal */
+.admin-content {
+    min-width: 0;
+    flex: 1;
+    padding: 28px;
+
+    background-color: var(--admin-background);
+    color: var(--admin-text);
+}
+
+/* Título de la página */
+.admin-page-title {
+    margin-bottom: 6px;
+    color: #24352f;
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+
+/* Descripción */
+.admin-page-subtitle {
+    margin-bottom: 0;
+    color: #687a70;
+}
+
+.admin-card {
+    background-color: #ffffff;
+    color: var(--admin-text);
+    border: 1px solid var(--admin-border);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgb(16 37 28 / 4%);
+}
+
+/* ===== Footer ===== */
+.admin-footer {
+    padding: 18px 0;
+    margin-left: 270px;
+    background: #fff;
+    border-top: 1px solid var(--admin-border);
+    color: #6c7d75;
+    font-size: 0.82rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991.98px) {
+    .admin-sidebar {
+        width: var(--bs-offcanvas-width);
+        flex: none;
+        border-radius: 0;
+    }
+
+    .admin-sidebar .offcanvas-body {
+        min-height: 0;
+    }
+
+    .admin-content {
+        padding: 20px 16px;
+    }
+
+    .admin-footer {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .admin-sidebar {
+        position: sticky;
+        top: 72px;
+        height: calc(100vh - 72px);
+        overflow-y: auto;
+    }
+}
